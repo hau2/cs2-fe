@@ -8,13 +8,14 @@ import {IEmployee} from '../../../model/IEmployee';
   styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent implements OnInit {
-  public employees: IEmployee[];
+  public a = 1;
+  public employees: IEmployee[] = [];
 
   constructor(public employeeService: EmployeeService) { }
 
   ngOnInit(): void {
     this.employeeService.getAllEmployees().subscribe(data => {
-      this.employees = data;
+      this.employees = data.data;
       console.log(this.employees);
     });
   }

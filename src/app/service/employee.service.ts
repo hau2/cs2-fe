@@ -7,7 +7,7 @@ import {IEmployee} from '../model/IEmployee';
   providedIn: 'root'
 })
 export class EmployeeService{
-  public BASE_API = 'http://localhost:8080/';
+  public BASE_API = 'http://localhost:9090/';
   public API_EMPLOYEE_LIST: string = this.BASE_API + 'employees';
   constructor(public http: HttpClient) {}
 

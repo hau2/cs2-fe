@@ -4,10 +4,11 @@ export interface IEmployee {
   address1: string;
   address2: string;
   city: string;
-  mail: string;
+  email: string;
+  gender: boolean;
   phone_Number: string;
   shareholder_Status: boolean;
   ssn: string;
   vacation_Days: string;
-  payRates_id: number;
+  pay_Rate: string;
 }
