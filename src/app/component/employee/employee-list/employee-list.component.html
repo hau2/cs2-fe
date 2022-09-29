@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row justify-content-between">
+    <h2 class="w-auto">Employee List</h2>
+    <div class="d-flex w-auto">
+      <input type="text" class="form-control mr-3" placeholder="Search by name" style="width: 300px; margin-right: 1rem;">
+      <button class="btn btn-outline-success">Search</button>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+  <span>
+    <button class="btn btn-success" [routerLink]="['/employee-add']">Create new</button>
+  </span>
+    <table class="table table-striped mt-3" style="font-size: 13px;">
+      <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+        <th>Email</th>
+        <th>Phone_Number</th>
+        <th>Gender</th>
+        <th>Shareholder</th>
+        <th>SSN</th>
+        <th>Pay Rate</th>
+        <th>Vacation Days</th>
+      </thead>
+      <tbody>
+      <!--    <tr *ngFor="let employee of employees | paginate: { itemsPerPage: 2, currentPage: p }">-->
+      <!--      <td>{{employee.id}}</td>-->
+      <!--      <td>{{employee.fullName}}</td>-->
+      <!--      <td>{{employee.position}}</td>-->
+      <!--      <td>{{employee.educationDegree.nameDegree}}</td>-->
+      <!--      <td>{{employee.division}}</td>-->
+      <!--      <td>{{employee.dateOfBirth}}</td>-->
+      <!--      <td>{{employee.idCard}}</td>-->
+      <!--      <td>{{employee.salary}}</td>-->
+      <!--      <td>{{employee.email}}</td>-->
+      <!--      <td>{{employee.phone}}</td>-->
+      <!--      <td>{{employee.address}}</td>-->
+      <!--      <td style="width: 14%;">-->
+      <!--        <button class="btn btn-sm btn-warning me-3" [routerLink]="['../employee-edit',employee.id]">Sửa</button>-->
+      <!--        &lt;!&ndash;        <button mat-button (click)="openDialogDelete(employee.id ,employee.fullName)" class="btn btn-sm btn-danger">Xoá</button>&ndash;&gt;-->
+      <!--        <button data-toggle="modal" data-target="#idModal" class="btn btn-sm btn-danger"-->
+      <!--                >Xóa-->
+      <!--        </button>-->
+      <!--      </td>-->
+      <!--    </tr>-->
+      </tbody>
+    </table>
+  </div>
+</div>
+
