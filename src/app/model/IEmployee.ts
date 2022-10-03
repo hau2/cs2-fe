@@ -11,4 +11,7 @@ export interface IEmployee {
   ssn: string;
   vacation_Days: string;
   pay_Rate: string;
+  value: number;
+  payAmount: number;
+  tax_Percentage: number;
 }
